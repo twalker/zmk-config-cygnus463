@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: sofle_left
+    shield: cygnus_4x6x3_left
   - board: nice_nano_v2
-    shield: sofle_right
+    shield: cygnus_4x6x3_right
