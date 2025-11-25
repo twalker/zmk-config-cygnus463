@@ -14,7 +14,7 @@ This [ZMK](https://zmk.dev/) configuration was copied from [juhakaup/zmk-cygnus-
 | SHFT | Z      | X     | C      | V      | B       |              | N      | M      | ,      | .     | /      | SHFT |
 |      |        |       | L3/ESC | L2/TAB | L1/BKSP |              | L1/SPC | L2/DEL | L3/ENT |       |        |      |
 
-### Lower layer
+### L1: Navigation
 
 |       |     |     |        |        |         | <- L -- R -> |        |        |        |     |     |      |
 | ----- | --- | --- | ------ | ------ | ------- | ------------ | ------ | ------ | ------ | --- | --- | ---- |
@@ -24,7 +24,7 @@ This [ZMK](https://zmk.dev/) configuration was copied from [juhakaup/zmk-cygnus-
 | SHFT  |     |     |        |        |         |              |        |        |        |     |     |      |
 |       |     |     | L3/ESC | L2/TAB | L1/BKSP |              | L1/SPC | L2/DEL | L3/ENT |     |     |      |
 
-### Raise layer
+### L2: Symbols
 
 |      |     |     |     |     |     | <- L -- R -> |     |     |     |     |     |      |
 | ---- | --- | --- | --- | --- | --- | ------------ | --- | --- | --- | --- | --- | ---- |
@@ -33,7 +33,7 @@ This [ZMK](https://zmk.dev/) configuration was copied from [juhakaup/zmk-cygnus-
 | SHFT |     |     |     |     |     |              | \_  | +   | {   | }   | \|  | ~    |
 |      |     |     | GUI |     | SPC |              | ENT |     | ALT |     |     |      |
 
-### Bluetooth layer
+### L3: System
 
 |          |          |          |          |     |            | <- L -- R -> |     |     |     |     |     |     |
 | -------- | -------- | -------- | -------- | --- | ---------- | ------------ | --- | --- | --- | --- | --- | --- |
