@@ -4,7 +4,7 @@ This [ZMK](https://zmk.dev/) configuration was copied from [juhakaup/zmk-cygnus-
 
 ## Default Keymap
 
-### Base layer
+### L0: Base
 
 |      |        |       |        |        |         | <- L -- R -> |        |        |        |       |        |      |
 | ---- | ------ | ----- | ------ | ------ | ------- | ------------ | ------ | ------ | ------ | ----- | ------ | ---- |
@@ -14,31 +14,34 @@ This [ZMK](https://zmk.dev/) configuration was copied from [juhakaup/zmk-cygnus-
 | SHFT | Z      | X     | C      | V      | B       |              | N      | M      | ,      | .     | /      | SHFT |
 |      |        |       | L3/ESC | L2/TAB | L1/BKSP |              | L1/SPC | L2/DEL | L3/ENT |       |        |      |
 
-### L1: Navigation
+### L1: Function
 
-|       |     |     |        |        |         | <- L -- R -> |        |        |        |     |     |      |
-| ----- | --- | --- | ------ | ------ | ------- | ------------ | ------ | ------ | ------ | --- | --- | ---- |
-| TAB   | F1  | F2  | F3     | F4     | F5      |              | F6     | F7     | F8     | F9  | F10 | BKSP |
-| TAB   | 1   | 2   | 3      | 4      | 5       |              | 6      | 7      | 8      | 9   | 0   | BKSP |
-| BTCLR | BT1 | BT2 | BT3    | BT4    | BT5     |              | LFT    | DWN    | UP     | RGT |     |      |
-| SHFT  |     |     |        |        |         |              |        |        |        |     |     |      |
-|       |     |     | L3/ESC | L2/TAB | L1/BKSP |              | L1/SPC | L2/DEL | L3/ENT |     |     |      |
+|     |      |     |      |      |      | <- L -- R -> |      |      |      |      |      |     |
+| --- | ---- | --- | ---- | ---- | ---- | ------------ | ---- | ---- | ---- | ---- | ---- | --- |
+|     | F1   | F2  | F3   | F4   | F5   |              | F6   | F7   | F8   | F9   | F10  | F11 |
+|     |      |     |      |      |      |              |      | PGUP | UP   |      | INS  | F12 |
+|     | CTRL | ALT | GUI  | SHFT |      |              | HOME | LEFT | DOWN | RIGT | END  |     |
+|     | UNDO | CUT | COPY | APP  | PSTE |              | LTAB | PGDN |      |      | RTAB |     |
+|     |      |     |      |      |      |              |      |      |      |      |      |     |
 
 ### L2: Symbols
 
-|      |     |     |     |     |     | <- L -- R -> |     |     |     |     |     |      |
-| ---- | --- | --- | --- | --- | --- | ------------ | --- | --- | --- | --- | --- | ---- |
-| TAB  | !   | @   | #   | $   | %   |              | ^   | &   | \*  | (   | )   | BKSP |
-| CTRL |     |     |     |     |     |              | -   | =   | [   | ]   | \   | `    |
-| SHFT |     |     |     |     |     |              | \_  | +   | {   | }   | \|  | ~    |
-|      |     |     | GUI |     | SPC |              | ENT |     | ALT |     |     |      |
+|     |     |     |     |     |     | <- L -- R -> |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | ------------ | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |              |     |     |     |     |     |     |
+|     | !   | @   | {   | }   | \|  |              | &   | \*  | <   | >   | '   |     |
+|     | #   | $   | (   | )   | `   |              | -   | =   | +   | \_  | ;   |     |
+|     | %   | ^   | [   | ]   | ~   |              | \   | :   | ,   | .   | /   |     |
+|     |     |     |     |     |     |              |     |     |     |     |     |     |
 
 ### L3: System
 
-|          |          |          |          |     |            | <- L -- R -> |     |     |     |     |     |     |
-| -------- | -------- | -------- | -------- | --- | ---------- | ------------ | --- | --- | --- | --- | --- | --- |
-| BT_SEL 0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 |     | &bt BT_CLR |              |     |     |     |     |     |     |
-| BT_SEL 0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 |     | &bt BT_CLR |              |     |     |     |     |     |     |
-| ind_bat  | ind_con  |          |          |     |            |              |     |     |     |     |     |     |
-|          |          |          |          |     |            |              |     |     |     |     |     |     |
-|          |          |          |          |     |            |              |     |     |     |     |     |     |
+|          |          |          |          |       |        | <- L -- R -> |      |        |          |        |     |     |
+| -------- | -------- | -------- | -------- | ----- | ------ | ------------ | ---- | ------ | -------- | ------ | --- | --- |
+| BT_SEL 0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 |       | BT_CLR |              |      |        |          |        |
+|          |          |          |          |       |        |              |      |        | C_VOL_UP |        |     |     |
+| ind_bat  | ind_con  |          |          |       |        |              |      | C_PREV | C_PP     | C_NEXT |     |     |
+|          |          |          |          |       |        |              |      |        | C_VOL_DN | C_MUTE |     |     |
+|          |          |          |          | RESET | BOOT   |              | BOOT | RESET  |          |        |     |     |
+
+* [List of Keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes)
